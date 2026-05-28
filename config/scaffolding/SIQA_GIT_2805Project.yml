@@ -7,6 +7,15 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqa_git_2805.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA_GIT_2805Project
+    version: "1.0"
+- serviceName: project.kvv_2404_fedtest_5a626de41e9147bcbeffc99933067bec_export.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDBConn
+  packages:
+  - name: pkg_5a626de41e9147bcbeffc99933067bec_exported
+    version: "1.0"
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
